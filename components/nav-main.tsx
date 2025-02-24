@@ -57,7 +57,7 @@ export function NavMain({
                                 <CollapsibleTrigger asChild>
                                     {item.url ? (
                                         <a href={item.url}>
-                                            <SidebarMenuButton tooltip={item.title} className={menuActive ? "bg-primary hover:bg-third cursor-pointer text-white transition-colors duration-200 ease-in-out hover:text-white pl-5" : "cursor-pointer hover:pl-4"}>
+                                            <SidebarMenuButton tooltip={item.title} className={` cursor-pointer transition-all duration-200 ease-in-out ${menuActive ? "bg-sidebar-primary hover:bg-sidebar-primary/60" : ""}`}>
                                                 {item.icon && <item.icon />}
                                                 <span>{item.title}</span>
                                                 {item.items && (
@@ -67,7 +67,7 @@ export function NavMain({
                                             </SidebarMenuButton>
                                         </a>
                                     ) : (
-                                        <SidebarMenuButton tooltip={item.title} className="cursor-pointer hover:pl-4">
+                                        <SidebarMenuButton tooltip={item.title} className="">
                                             {item.icon && <item.icon />}
                                             <span>{item.title}</span>
                                             {item.items && (
@@ -83,7 +83,7 @@ export function NavMain({
                                             const subMenuActive = pathname === subItem.url;
                                             return (
                                                 <SidebarMenuSubItem key={subItem.title}>
-                                                    <SidebarMenuSubButton asChild className={subMenuActive ? "bg-red-400 hover:bg-blue-400 text-white transition-all duration-200 pl-4 ease-in-out" : "hover:pl-4 transition-all duration-200 ease-in-out"}>
+                                                    <SidebarMenuSubButton asChild className={subMenuActive ? "" : ""}>
                                                         <a href={subItem.url}>
                                                             <span>{subItem.title}</span>
                                                         </a>
