@@ -17,6 +17,14 @@
         "selamatsore":"Good Evening",
         "selamatmalam":"Good Night",
         "selamatmenikmati":"Enjoy the features and services from us!"
-
+    },
+    "menus": {
+        "dashboard":"dashboard",
+        "siswa":"Students",
+        "masterdata":"Master Data",
+        "test":"Test"
+    },
+    "Siswa": {
+        "daftarsiswa":"Students List"
     }
 }

@@ -17,6 +17,14 @@
         "selamatsore":"Selamat Sore",
         "selamatmalam":"Selamat Malam",
         "selamatmenikmati":"Selamat menikmati fitur dan layanan dari kami!"
-
+    },
+    "menus": {
+        "dashboard":"dashboard",
+        "siswa":"Siswa",
+        "masterdata":"Master Data",
+        "test":"Test"
+    },
+    "Siswa": {
+        "daftarsiswa":"Daftar Siswa"
     }
   }

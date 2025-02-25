@@ -5,12 +5,14 @@ import React from 'react'
 import { FiBookmark } from "react-icons/fi";
 import { CardDashboard, DashboardHeader } from './components';
 import moment from 'moment'
+import { SetTitle } from '@/components/setHelmet';
 
 export default function DashboardPage() {
     const t = useTranslations('Dashboard');
     const date = new Date();
     return (
         <MainLayout page=''>
+            <SetTitle pageTitle="Dashboard" />
             <DashboardHeader />
             <div className='grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-5'>
                 <CardDashboard label={t('siswasum')} value={1932} icon={User} lastUpdated={moment(date).format('ll')} />
