@@ -30,6 +30,7 @@ import {
     useSidebar,
 } from "@/components/ui/sidebar"
 import ToggleTheme from "./toggle-theme"
+import ToggleLanguage from "./toggle-languages"
 
 export function NavUser({
     user,
@@ -81,8 +82,6 @@ export function NavUser({
                             </div>
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator />
-                        <ToggleTheme />
-                        <DropdownMenuSeparator />
                         <DropdownMenuGroup>
                             <DropdownMenuItem>
                                 <BadgeCheck />
@@ -97,6 +96,11 @@ export function NavUser({
                                 Notifications
                             </DropdownMenuItem>
                         </DropdownMenuGroup>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuLabel className="text-foreground">Personalize</DropdownMenuLabel>
+                        <ToggleTheme />
+                        <ToggleLanguage />
+                        <DropdownMenuSeparator />
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
                             <LogOut />

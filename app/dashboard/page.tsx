@@ -1,18 +1,21 @@
 import MainLayout from '@/components/layouts/main-layout'
+import { useLocale, useTranslations } from 'next-intl';
 import React from 'react'
 
 export default function DashboardPage() {
-  return (
-    <MainLayout page=''>
-        <div>
+    const t = useTranslations('HomePage');
+    const locale = useLocale();
+    return (
+        <MainLayout page=''>
             <div>
                 <div>
                     <div>
-                        <h1></h1>
+                        <div>
+                            <h1>{t('title')}</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </MainLayout>
-  )
+        </MainLayout>
+    )
 }

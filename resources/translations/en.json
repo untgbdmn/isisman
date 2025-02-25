@@ -1,0 +1,9 @@
+{
+    "HomePage": {
+      "title": "Hello world!"
+    },
+    "language":{
+        "indo": "Indonesian",
+        "eng" : "English"
+    }
+  }
