@@ -1,9 +1,22 @@
 {
-    "HomePage": {
-      "title": "Hallow Dunia!"
-    },
     "language":{
         "indo": "Bahasa Indonesia",
         "eng" : "Bahasa Inggris"
+    },
+    "Dashboard": {
+        "siswasum":"Jumlah Siswa",
+        "gurusum":"Jumlah Guru",
+        "stafsum":"Jumlah Staf",
+        "lastupdated":"Terakhir diperbarui",
+        "langganan":"langganan",
+        "akanberakhir":"langganan anda akan berakhir"
+    },
+    "Greetings" : {
+        "selamatpagi":"Selamat pagi",
+        "selamatsiang":"Selamat Siang",
+        "selamatsore":"Selamat Sore",
+        "selamatmalam":"Selamat Malam",
+        "selamatmenikmati":"Selamat menikmati fitur dan layanan dari kami!"
+
     }
   }
