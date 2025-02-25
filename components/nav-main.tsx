@@ -57,7 +57,7 @@ export function NavMain({
                                 <CollapsibleTrigger asChild>
                                     {item.url ? (
                                         <a href={item.url}>
-                                            <SidebarMenuButton tooltip={item.title} className={` cursor-pointer transition-all duration-200 ease-in-out ${menuActive ? "bg-sidebar-primary hover:bg-sidebar-primary/60" : ""}`}>
+                                            <SidebarMenuButton tooltip={item.title} className={` cursor-pointer transition-all duration-200 ease-in-out ${menuActive ? "bg-sidebar-primary hover:bg-sidebar-primary/60 text-white hover:text-white" : ""}`}>
                                                 {item.icon && <item.icon />}
                                                 <span>{item.title}</span>
                                                 {item.items && (
