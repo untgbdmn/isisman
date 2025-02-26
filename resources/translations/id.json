@@ -3,6 +3,21 @@
         "indo": "Bahasa Indonesia",
         "eng" : "Bahasa Inggris"
     },
+    "auth": {
+        "masukakun":"Masuk Akun",
+        "masukakundesc": "Selamat datang kembali di iSisman, silakan untuk masuk akun Anda.",
+        "daftarakun":"Daftar Akun",
+        "daftarakundesc":"Daftarkan akun anda, dan nikmati layanan dari kami!",
+        "sudahpunyaakun":"Sudah punya akun?",
+        "masukakundisini":"Masuk disini!",
+        "namalengkap":"Nama Lengkap",
+        "username":"Nama Pengguna",
+        "password":"Kata Sandi",
+        "ingatsaya":"Ingat Saya",
+        "lupapasword":"Lupa Password?",
+        "belumpunyaakun":"Belum Punya Akun?",
+        "daftardisini":"Daftar disini!"
+    },
     "Dashboard": {
         "siswasum":"Jumlah Siswa",
         "gurusum":"Jumlah Guru",
