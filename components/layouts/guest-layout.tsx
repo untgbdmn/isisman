@@ -1,8 +1,8 @@
 import { MonitorCog } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import React from 'react'
-import ToggleLanguage from '../toggle-languages'
 import { cn } from '@/lib/utils'
+import { SwitchLanguage } from '../toggle-languages'
 
 type GuestLayoutProps = {
     children?: React.ReactNode
@@ -15,7 +15,9 @@ export default function GuestLayout({ children, type, className }: GuestLayoutPr
         <div className='min-h-screen h-full w-full flex flex-col justify-center items-center'>
             <div className='flex flex-col items-center'>
 
-                <div className='pb-7'>Toggle Bahasa</div>
+                <div className='pb-7'>
+                    <SwitchLanguage />
+                </div>
 
                 <div className='flex items-center gap-2 flex-col justify-center'>
                     <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
