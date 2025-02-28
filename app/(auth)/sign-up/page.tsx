@@ -1,4 +1,5 @@
 "use client"
+
 import GuestLayout from '@/components/layouts/guest-layout'
 import { Button } from '@/components/ui/button'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
@@ -10,6 +11,8 @@ import { z } from 'zod'
 import { registerSchema } from '@/resources/schemas/authSchema'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
+import { toast } from 'sonner'
+import { authClient } from '@/lib/auth-client'
 
 
 export default function SignUpPage() {
@@ -28,10 +31,26 @@ export default function SignUpPage() {
         },
     })
 
-    function onSubmit(values: z.infer<typeof registerSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
-        console.log(values)
+    async function onSubmit(values: z.infer<typeof registerSchema>) {
+        await authClient.signUp.email({
+            email: values.email,
+            name: values.fullname,
+            password: values.password,
+            callbackURL: "/sign-in"
+        }, {
+            onRequest: () => {
+                setLoading(true);
+            },
+            onSuccess: () => {
+                toast.success(t('success'))
+                router.push('/sign-in')
+            },
+            onError: (error) => {
+                console.log(error)
+                toast.error(t(error.response))
+                router.push('/sign-up')
+            }
+        })
     }
 
     return (

@@ -16,7 +16,9 @@
         "ingatsaya":"Remember Me",
         "lupapasword":"Forgot Password?",
         "belumpunyaakun":"Don't have an account?",
-        "daftardisini":"Sign up here!"
+        "daftardisini":"Sign up here!",
+        "loading":"Please Waiting...",
+        "success":"Success!"
     },
     "Dashboard": {
         "siswasum": "Total Students",
