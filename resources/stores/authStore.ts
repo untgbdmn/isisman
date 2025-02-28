@@ -50,6 +50,7 @@ const authStore = create<AuthStoreType>()(
             },
             logout: () => {
                 customCookies.removeAll();
+                customCookies.removeItem('isisman-auth');
                 set({ token: null, user: null })
             },
         }),

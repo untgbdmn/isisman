@@ -6,6 +6,7 @@ import {
     ChevronsUpDown,
     CreditCard,
     LogOut,
+    Router,
 } from "lucide-react"
 
 import {
@@ -30,6 +31,9 @@ import {
 } from "@/components/ui/sidebar"
 import ToggleTheme from "./toggle-theme"
 import ToggleLanguage from "./toggle-languages"
+import { authClient } from "@/lib/auth-client"
+import authStore from "@/resources/stores/authStore"
+import { useRouter } from "next/navigation"
 
 export function NavUser({
     user,
@@ -41,6 +45,7 @@ export function NavUser({
     }
 }) {
     const { isMobile } = useSidebar()
+    const router = useRouter();
 
     return (
         <SidebarMenu>
@@ -101,7 +106,12 @@ export function NavUser({
                         <ToggleLanguage />
                         <DropdownMenuSeparator />
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem>
+                        <DropdownMenuItem onClick={ async () => {
+                            await authClient.signOut();
+                            const logout = authStore.getState().logout;
+                            logout();
+                            router.push('/sign-in')
+                        }}>
                             <LogOut />
                             Log out
                         </DropdownMenuItem>
