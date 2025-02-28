@@ -9,5 +9,16 @@ export const auth = betterAuth({
     }),
     emailAndPassword: {
         enabled: true
+    },
+    advanced: {
+        cookies: {
+            session_token: {
+                name: "auth-isisman",
+                attributes: {
+                    expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                    path: '/'
+                }
+            }
+        }
     }
 });
