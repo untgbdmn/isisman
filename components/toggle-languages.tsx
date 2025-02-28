@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import IDFlag from '@/resources/assets/icons/indonesia-flag.png'
 import USFlag from '@/resources/assets/icons/united-states.png'
 import Image from 'next/image';
+import { Switch } from "@/components/ui/switch"
 
 export default function ToggleLanguage() {
     const locale = useLocale();
@@ -35,4 +36,26 @@ export default function ToggleLanguage() {
         </DropdownMenu>
 
     )
+}
+
+export function SwitchLanguage() {
+    const locale = useLocale();
+    const t = useTranslations("language");
+    const isEnglish = locale === 'en';
+
+    const handleSwitch = () => {
+        setUserLocale(isEnglish ? 'id' : 'en');
+    }
+
+    return (
+        <div className='flex flex-col items-center justify-center'>
+            <Switch
+                checked={isEnglish}
+                onCheckedChange={handleSwitch}
+            />
+            <h1 className='text-sm'>
+                {isEnglish ? t('eng') : t('indo')}
+            </h1>
+        </div>
+    );
 }

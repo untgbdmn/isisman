@@ -1,9 +1,5 @@
-import React from 'react'
+import { redirect } from 'next/navigation'
 
 export default function Home() {
-    return (
-        <div className='bg-foreground min-h-screen text-white'>
-            Home
-        </div>
-    )
+    return redirect('/sign-in')
 }

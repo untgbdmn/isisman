@@ -1,4 +1,4 @@
-import { BookOpen, Bot, Frame, PieChart, Settings2, SquareTerminal } from "lucide-react";
+import { Bot, SquareTerminal, User2 } from "lucide-react";
 
 export const MENUITEM = {
     user: {
@@ -9,89 +9,29 @@ export const MENUITEM = {
     navMain: [
         {
             title: "Dashboard",
+            langid: "dashboard",
             url: "/dashboard",
             icon: SquareTerminal,
             isActive: true,
         },
         {
-            title: "Models",
+            title: "Siswa",
+            langid: "siswa",
+            url: "/students",
+            icon: User2,
+            isActive: true,
+        },
+        {
+            title: "Master Data",
+            langid: "masterdata",
             icon: Bot,
             items: [
                 {
                     title: "Genesis",
                     url: "#",
-                },
-                {
-                    title: "Explorer",
-                    url: "#",
-                },
-                {
-                    title: "Quantum",
-                    url: "#",
+                    langid: "test"
                 },
             ],
-        },
-        {
-            title: "Documentation",
-            icon: BookOpen,
-            items: [
-                {
-                    title: "Introduction",
-                    url: "#",
-                },
-                {
-                    title: "Get Started",
-                    url: "#",
-                },
-                {
-                    title: "Tutorials",
-                    url: "#",
-                },
-                {
-                    title: "Changelog",
-                    url: "#",
-                },
-            ],
-        },
-        {
-            title: "Settings",
-            url: "#",
-            icon: Settings2,
-            items: [
-                {
-                    title: "General",
-                    url: "#",
-                },
-                {
-                    title: "Team",
-                    url: "#",
-                },
-                {
-                    title: "Billing",
-                    url: "#",
-                },
-                {
-                    title: "Limits",
-                    url: "#",
-                },
-            ],
-        },
-    ],
-    projects: [
-        {
-            name: "Design Engineering",
-            url: "#",
-            icon: Frame,
-        },
-        {
-            name: "Sales & Marketing",
-            url: "#",
-            icon: PieChart,
-        },
-        {
-            name: "Travel",
-            url: "#",
-            icon: Map,
-        },
-    ],
+        }
+    ]
 }
