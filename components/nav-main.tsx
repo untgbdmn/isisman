@@ -86,7 +86,7 @@ export function NavMain({
                                             const subMenuActive = pathname === subItem.url;
                                             return (
                                                 <SidebarMenuSubItem key={subItem.title}>
-                                                    <SidebarMenuSubButton asChild className={subMenuActive ? "" : ""}>
+                                                    <SidebarMenuSubButton asChild className={subMenuActive ? "bg-sidebar-primary hover:bg-sidebar-primary/60 text-white hover:text-white" : ""}>
                                                         <a href={subItem.url}>
                                                             <span className="capitalize">{subItem.langid ? t(subItem.langid) : subItem.title}</span>
                                                         </a>

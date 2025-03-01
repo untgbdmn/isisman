@@ -45,9 +45,27 @@
         "dashboard":"dashboard",
         "siswa":"Siswa",
         "masterdata":"Master Data",
+        "pengaturan":"Pengaturan",
+        "datasekolah":"Data Sekolah",
         "test":"Test"
     },
     "Siswa": {
         "daftarsiswa":"Daftar Siswa"
+    },
+    "School": {
+        "datasekolah":"Data Sekolah",
+        "nama":"Nama Sekolah",
+        "npsn":"Nomor Pokok Sekolah Nasional",
+        "status":"Status Sekolah",
+        "bentukpendidikan":"Bentuk Pendidikan",
+        "kurikulum":"Kurikulum",
+        "akreditasi":"Akreditasi",
+        "alamat":"Alamat",
+        "kota":"Kota",
+        "provinsi":"Provinsi",
+        "negeri":"Negeri",
+        "swasta":"Swasta",
+        "smk":"Sekolah Menengah Kejuruan",
+        "sma":"Sekolah Menengah Atas"
     }
   }

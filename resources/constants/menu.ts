@@ -1,4 +1,4 @@
-import { Bot, SquareTerminal, User2 } from "lucide-react";
+import { Bot, Settings2, SquareTerminal, User2 } from "lucide-react";
 
 export const MENUITEM = {
     user: {
@@ -10,16 +10,14 @@ export const MENUITEM = {
         {
             title: "Dashboard",
             langid: "dashboard",
-            url: "/dashboard",
+            url: "/app/dashboard",
             icon: SquareTerminal,
-            isActive: true,
         },
         {
             title: "Siswa",
             langid: "siswa",
-            url: "/students",
+            url: "/app/students",
             icon: User2,
-            isActive: true,
         },
         {
             title: "Master Data",
@@ -32,6 +30,18 @@ export const MENUITEM = {
                     langid: "test"
                 },
             ],
-        }
+        },
+        {
+            title: "Setting",
+            langid: "pengaturan",
+            icon: Settings2,
+            items: [
+                {
+                    title: "Data Sekolah",
+                    url: "/app/school",
+                    langid: "datasekolah"
+                },
+            ],
+        },
     ]
 }

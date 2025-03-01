@@ -45,9 +45,27 @@
         "dashboard":"dashboard",
         "siswa":"Students",
         "masterdata":"Master Data",
+        "pengaturan":"Settings",
+        "datasekolah":"School Datas",
         "test":"Test"
     },
     "Siswa": {
         "daftarsiswa":"Students List"
+    },
+    "School": {
+        "datasekolah":"School Datas",
+        "nama":"School Name",
+        "npsn":"National School Identification Number",
+        "status":"School Status",
+        "bentukpendidikan":"Type of Education",
+        "kurikulum":"Curriculum",
+        "akreditasi":"Accreditation",
+        "alamat":"Address",
+        "kota":"City",
+        "provinsi":"Province",
+        "negeri":"Public School",
+        "swasta":"Private School",
+        "smk":"Vocational High School",
+        "sma":"Senior High School"
     }
 }

@@ -33,7 +33,7 @@ export default function SigninPage() {
         await authClient.signIn.email({
             email: values.email,
             password: values.password,
-            callbackURL: "/dashboard"
+            callbackURL: "/app/dashboard"
         }, {
             onRequest: () => {
                 setLoading(true);
@@ -41,7 +41,7 @@ export default function SigninPage() {
             onSuccess: async (response) => {
                 authStore.getState().login(response?.data?.token, response?.data?.user);
                 try {
-                    await router.push('/dashboard');
+                    await router.push('/app/dashboard');
                     toast.success(t('success'));
                 } catch (error) {
                     console.error('Navigation failed:', error);
