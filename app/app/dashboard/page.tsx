@@ -1,3 +1,6 @@
+"use client"
+
+
 import MainLayout from '@/components/layouts/main-layout'
 import { User } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -10,6 +13,7 @@ import { SetTitle } from '@/components/setHelmet';
 export default function DashboardPage() {
     const t = useTranslations('Dashboard');
     const date = new Date();
+
     return (
         <MainLayout page=''>
             <SetTitle pageTitle="Dashboard" />
