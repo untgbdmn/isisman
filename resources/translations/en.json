@@ -18,7 +18,13 @@
         "belumpunyaakun":"Don't have an account?",
         "daftardisini":"Sign up here!",
         "loading":"Please Waiting...",
-        "success":"Success!"
+        "success":"Success!",
+        "lupasandi":"Forgot Password",
+        "lupasandidesc":"Forgot your password? Enter your email to receive a reset link",
+        "kirim":"Submit",
+        "resetpassword":"Reset Password",
+        "resetpassworddesc":"Please enter a new password!",
+        "silahkancekemail":"Please check your email!"
     },
     "Dashboard": {
         "siswasum": "Total Students",

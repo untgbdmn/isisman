@@ -18,7 +18,13 @@
         "belumpunyaakun":"Belum Punya Akun?",
         "daftardisini":"Daftar disini!",
         "loading":"Silahkan Tunggu...",
-        "success":"Berhasil!"
+        "success":"Berhasil!",
+        "lupasandi":"Lupa Sandi",
+        "lupasandidesc":"Lupa Kata Sandi? Masukkan Email Anda untuk Mendapatkan Tautan Pengaturan Ulang!",
+        "kirim":"Kirim",
+        "resetpassword":"Reset Password",
+        "resetpassworddesc":"Silahkan masukan kata sandi baru!",
+        "silahkancekemail":"Silahkan cek email anda!"
     },
     "Dashboard": {
         "siswasum":"Jumlah Siswa",

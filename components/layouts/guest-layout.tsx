@@ -6,7 +6,7 @@ import { SwitchLanguage } from '../toggle-languages'
 
 type GuestLayoutProps = {
     children?: React.ReactNode
-    type: "signin" | "signup"
+    type: "signin" | "signup" | "forgotpassword" | "resetpassword"
     className?: string
 }
 export default function GuestLayout({ children, type, className }: GuestLayoutProps) {
@@ -34,8 +34,8 @@ export default function GuestLayout({ children, type, className }: GuestLayoutPr
             <div className='w-full max-w-xl'>
 
                 <div className='flex flex-col items-center justify-center text-center py-5'>
-                    <h1 className='text-2xl font-bold'>{type === 'signin' ? t('masukakun') : t('daftarakun')}</h1>
-                    <p className="text-center text-xs px-10 lg:px-0">{type === 'signin' ?  t('masukakundesc') : t('daftarakundesc')}</p>
+                    <h1 className='text-2xl font-bold'>{type === 'signin' ? t('masukakun') : type === 'signup' ? t('daftarakun') : type === 'forgotpassword' ? t('lupasandi') : t('resetpassword')}</h1>
+                    <p className="text-center text-xs px-10 lg:px-10">{type === 'signin' ?  t('masukakundesc') : type === 'signup' ? t('daftarakundesc') : type === 'forgotpassword' ?  t('lupasandidesc') : t('resetpassworddesc')}</p>
                 </div>
 
                 <div className={cn('lg:px-10 md:px-14 lg:px-10 px-5', className)}>

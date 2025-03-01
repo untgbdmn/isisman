@@ -81,7 +81,7 @@ export default function SigninPage() {
                             <FormItem>
                                 <div className='flex items-center justify-between'>
                                     <FormLabel>{t('password')}</FormLabel>
-                                    <FormLabel className='underline cursor-pointer'>{t('lupapasword')}</FormLabel>
+                                    <span className='underline cursor-pointer text-sm' onClick={() => router.push('/forgot-password')}>{t('lupapasword')}</span>
                                 </div>
                                 <FormControl>
                                     <Input placeholder="" type='password' {...field} />
