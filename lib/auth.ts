@@ -1,6 +1,7 @@
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import { PrismaClient } from "@prisma/client";
+import { nextCookies } from "better-auth/next-js";
  
 const prisma = new PrismaClient();
 export const auth = betterAuth({
@@ -10,15 +11,5 @@ export const auth = betterAuth({
     emailAndPassword: {
         enabled: true
     },
-    advanced: {
-        cookies: {
-            session_token: {
-                name: "auth-isisman",
-                attributes: {
-                    expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
-                    path: '/'
-                }
-            }
-        }
-    }
+    plugins: [nextCookies()]
 });

@@ -10,6 +10,7 @@ type GuestLayoutProps = {
     className?: string
 }
 export default function GuestLayout({ children, type, className }: GuestLayoutProps) {
+    
     const t = useTranslations('auth')
     return (
         <div className='min-h-screen h-full w-full flex flex-col justify-center items-center'>

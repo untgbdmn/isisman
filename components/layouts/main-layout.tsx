@@ -23,6 +23,7 @@ export interface MainLayoutProps {
 }
 
 export default function MainLayout({ parentLink, children, parent, page }: MainLayoutProps) {
+    
     return (
         <SidebarProvider>
             <AppSidebar />
